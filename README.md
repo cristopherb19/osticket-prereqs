@@ -37,6 +37,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     - Under "Size", select option with at least 2 vcpus
     - Under "Select Inbound Ports", confirm RDP(3389) is selected
     - Review and create
+    - <img src="https://imgur.com/UnVEqCr.png" height="80%" width="80%" alt="Remote desktop IP"/>
+    
+    
 </p>
 <br />
 
@@ -47,7 +50,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Find your VM's public IP address and copy it
 - Open Microsoft Remote Desktop App
 - Paste VM's public IP address into "Computer" field then connect to VM
-<img src="https://i.imgur.com/Z2iVbds.png" height="80%" width="80%" alt="Remote desktop IP"/>
+- <img src="https://imgur.com/liw9WGV.png" height="80%" width="80%" alt="Remote desktop IP"/>
+- <img src="https://imgur.com/p430I9c.png" height="80%" width="80%" alt="Remote desktop IP"/>
+- <img src="https://imgur.com/pHKALiq.png" height="80%" width="80%" alt="Remote desktop IP"/>
   
 </p>
 <br />
@@ -58,6 +63,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Copy <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD">osTicket Installation Files</a> link
 - Within the VM, open a browser, paste link into search bar, then download the files
+- unzip the "osTicket-Installation-Files.zip" to your desktop. The folder should be named osTicket-Installation-Files
+- <img src="https://imgur.com/E8ba0Xq.png" height="80%" width="80%" alt="Remote desktop IP"/>
+- <img src="https://imgur.com/cKoHt0m.png" height="80%" width="80%" alt="Remote desktop IP"/>
   
 </p>
 <br />
@@ -72,7 +80,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Enable and expand "World Wide Web Services"
 - Expand "Application Development Features"
 - Enable CGI then hit "Ok"
-<img src="https://i.imgur.com/oOkr5uf.png" alt="IIS Enable"/>
+<img src="https://imgur.com/VRJMV31.png" height="80%" width="80%" alt="Remote desktop IP"/>
   
 </p>
 <br />
@@ -91,6 +99,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 
 - Install "rewrite_amd64_en-US.msi" from downloaded <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD">osTicket Installation Files</a>
+<img src="https://imgur.com/5aSWPRV.png" height="80%" width="80%" alt="Remote desktop IP"/>
   
 </p>
 <br />
@@ -102,7 +111,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Open File Explorer
 - Navigate to Windows (C:) Drive
 - In the Windows (C:) Drive, create a new folder titled "PHP"
-<img src="https://i.imgur.com/PMXi3QC.png" alt="PHP Folder"/>
+<img src="https://imgur.com/w8fW39U.png" alt="PHP Folder"/>
   
 </p>
 <br />
@@ -115,6 +124,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/zCEBJk8.png" alt="PHP Files"/>
 
 - Right click folder -> select "Extract all" -> click "Browse" -> select "PHP" folder located in Windows (C:) Drive
+<img src="https://imgur.com/0X8mK01.png" height="80%" width="80%" alt="Remote desktop IP"/>
   
 </p>
 <br />
@@ -124,6 +134,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 
 - Install "VC_redist.x86.exe" from <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD">osTicket Installation Files</a>
+<img src="https://imgur.com/f8i62xX.png" height="80%" width="80%" alt="Remote desktop IP"/>
   
 </p>
 <br />
@@ -138,9 +149,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Launch Configuration Wizard
 - Select "Standard" Configuration
-<img src="https://i.imgur.com/Ql5ZXG5.png" alt="MySql Standard config"/>
+<img src="https://imgur.com/Aa5yDKU.png" alt="MySql Standard config"/>
 
 - Choose and confirm password (DO NOT FORGET)
+- <img src="https://imgur.com/MeKwPqJ.png" alt="MySql Standard config"/>
+  
   
 </p>
 <br />
@@ -151,6 +164,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Open Windows search bar, type "IIS"
 - Right click application and "Run as administrator"
+- <img src="https://imgur.com/j7PPX4e.png" alt="MySql Standard config"/>
     
 </p>
 <br />
@@ -166,7 +180,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - After clicking "Register new PHP version", you will be required to provide a path to "php-cgi.exe"
 - Click the 3 dots to the right to open file explorer
 - Navigate to Windows (C:) Drive -> PHP -> select "php-cgi" -> click "Ok"
-<img src="https://i.imgur.com/QHD4pud.png" alt="PHP path"/>
+<img src="https://imgur.com/OOgL2el.png" alt="PHP path"/>
 
 </p>
 <br />
@@ -176,8 +190,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 
 - Within IIS, go to Home screen
-- Click restart on the right side of app under "Manage Server"
-<img src="https://i.imgur.com/UPFSr7e.png" alt="Restart IIS"/>
+- Reload IIS (Stop and Start the server)
+<img src="https://imgur.com/jUvOKjQ.png" alt="Restart IIS"/>
+<img src="https://imgur.com/oQiA4cL.png" alt="Restart IIS"/>
     
 </p>
 <br />
@@ -189,11 +204,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Extract files in "osTicket-v1.15.8" folder
 - Open new File Explorer window
 - Within new File Explorer window, navigate to Windows (C:) Drive -> "inetpub" -> "wwwroot"
-<img src="https://i.imgur.com/2FRnN9S.png" alt="Navigating to wwwroot folder"/>
+<img src="https://imgur.com/x9zLqYr.png" alt="Navigating to wwwroot folder"/>
 
 - Drag "Upload" folder from extracted files into the "wwwroot" folder
 - Rename "Upload" folder to "osTicket"
-<img src="https://i.imgur.com/w2vDNdn.png" alt="Rename to osTicket"/>
+<img src="https://imgur.com/x9zLqYr.png" alt="Rename to osTicket"/>
+<img src="https://imgur.com/M6lNOx9.png" alt="Rename to osTicket"/>
+<img src="https://imgur.com/ksxrw2L.png" alt="Rename to osTicket"/>
     
 </p>
 <br />
@@ -213,10 +230,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Within IIS, expand the "Sites" dropdown -> expand "Default Web Site" -> click "osTicket"
 - On the right side of the window, click on "Browse *80 (http)"
-<img src="https://i.imgur.com/AoGYYGx.png" alt="Browse *80"/>
+<img src="https://imgur.com/f7AGEgl.png" alt="Browse *80"/>
 
 - If done correctly, the osTicket site should load
-<img src="https://i.imgur.com/4VeB3q0.png" alt="osTicket Site"/>
+<img src="https://imgur.com/vf9IWUd.png" alt="osTicket Site"/>
     
 </p>
 <br />
