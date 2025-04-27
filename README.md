@@ -48,8 +48,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 
 - Find your VM's public IP address and copy it
-- Open Microsoft Remote Desktop App
-- Paste VM's public IP address into "Computer" field then connect to VM
+- Open Microsoft Remote Desktop App. If using Mac, install "Windows App" from the App Store and open it
+- Paste VM's public IP address into "PC name" field then connect to VM
 - <img src="https://imgur.com/liw9WGV.png" height="80%" width="80%" alt="Remote desktop IP"/>
 - <img src="https://imgur.com/p430I9c.png" height="80%" width="80%" alt="Remote desktop IP"/>
 - <img src="https://imgur.com/pHKALiq.png" height="80%" width="80%" alt="Remote desktop IP"/>
@@ -151,7 +151,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Select "Standard" Configuration
 <img src="https://imgur.com/Aa5yDKU.png" alt="MySql Standard config"/>
 
-- Choose and confirm password (DO NOT FORGET)
+- Choose and confirm your password
 - <img src="https://imgur.com/MeKwPqJ.png" alt="MySql Standard config"/>
   
   
@@ -173,7 +173,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
 
-- Within IIS, click "PHP Manager"
+- In IIS, click "PHP Manager"
 - Under "PHP Setup", click "Register new PHP version"
 <img src="https://i.imgur.com/GAGkdGk.png" alt="PHP version"/>
 
@@ -185,11 +185,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <br />
 
-<h3>&#9324; Restart IIS</h3>
+<h3>&#9324; Reload IIS</h3>
 
 <p>
 
-- Within IIS, go to Home screen
 - Reload IIS (Stop and Start the server)
 <img src="https://imgur.com/jUvOKjQ.png" alt="Restart IIS"/>
 <img src="https://imgur.com/oQiA4cL.png" alt="Restart IIS"/>
@@ -201,12 +200,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
 
-- Extract files in "osTicket-v1.15.8" folder
+- Extract files in the "osTicket-v1.15.8" folder
 - Open new File Explorer window
-- Within new File Explorer window, navigate to Windows (C:) Drive -> "inetpub" -> "wwwroot"
+- Navigate to Windows (C:) Drive -> "inetpub" -> "wwwroot"
 <img src="https://imgur.com/x9zLqYr.png" alt="Navigating to wwwroot folder"/>
 
-- Drag "Upload" folder from extracted files into the "wwwroot" folder
+- Copy "Upload" folder from extracted files and paste it into the "wwwroot" folder
 - Rename "Upload" folder to "osTicket"
 <img src="https://imgur.com/x9zLqYr.png" alt="Rename to osTicket"/>
 <img src="https://imgur.com/M6lNOx9.png" alt="Rename to osTicket"/>
@@ -215,7 +214,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <br />
 
-<h3>&#9326; Restart IIS Again</h3>
+<h3>&#9326; Reload IIS Again</h3>
 
 <p>
 
@@ -228,11 +227,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
 
-- Within IIS, expand the "Sites" dropdown -> expand "Default Web Site" -> click "osTicket"
+- While in IIS, expand the "Sites" dropdown -> expand "Default Web Site" -> click "osTicket"
 - On the right side of the window, click on "Browse *80 (http)"
 <img src="https://imgur.com/f7AGEgl.png" alt="Browse *80"/>
 
-- If done correctly, the osTicket site should load
+- The osTicket site should load
 <img src="https://imgur.com/vf9IWUd.png" alt="osTicket Site"/>
     
 </p>
@@ -242,7 +241,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
 
-- Within IIS, navigate to the "Home" page
+- Still in IIS, navigate to the "Home" page
 - On the left side of window, expand "Sites" folder -> "Default Web Site" -> click on "osTicket" folder
 - Click on "PHP Manager"
 <img src="https://i.imgur.com/pKSg6Q9.png" alt="PHP Manager Navigate"/>
@@ -258,7 +257,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
  <img src="https://imgur.com/CDNlS9a.png" alt="Extension enabling"/>
  <img src="https://imgur.com/E7eRZR1.png" alt="Extension enabling"/>
 
-- Refresh the osTicket site in your browser and if done correctly, you'll notice previously disabled features are now enabled
+- Refresh the osTicket site in your browser and notice the previously disabled features are now enabled
 <img src="https://imgur.com/FJcWzU5.png" alt="osTicket Refresh"/>
     
 </p>
@@ -269,9 +268,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 
 - Open File Explorer
-- Within File Explorer, navigate to Windows (C:) Drive -> "inetpub" -> "wwwroot" -> "osTicket" -> "include"
-- Within "include" folder, locate "ost-sampleconfig.php" file
-- Rename file to "ost-config.php"
+- Navigate to Windows (C:) Drive -> "inetpub" -> "wwwroot" -> "osTicket" -> "include"
+- Inside the "include" folder, locate the "ost-sampleconfig.php" file
+- Rename the file to "ost-config.php"
   <img src="https://imgur.com/zaUQ39p.png" alt="Extension enabling"/>
     
 </p>
@@ -285,7 +284,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Navigate to "Security" Tab -> click "Advanced" -> click "Disable inheritance" at bottom left of window -> click "Remove all inherited permissions from this object
 - Click "Add" at bottom left of window -> click "Select a principal" -> type "Everyone" in object name text box -> click "Ok"
 - Under "Basic permissions" enable "Full control" check box
-- If done correctly, your window should look like the picture below:
 <img src="https://imgur.com/zE3utBn.png" alt="Permissions window"/>
 <img src="https://imgur.com/rUW2oUk.png" alt="Permissions window"/>
 <img src="https://imgur.com/edxlydv.png" alt="Permissions window"/>
@@ -299,11 +297,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
 
-- Within the osTicket webpage, click "Continue"
-- Fill out "System Settings" and "Admin User" section (NOTE: "Default Email" and the email under "Admin User" Section should differ)
+- In the browser, continue the osTicket setup:
+- Set Helpdesk Name
+- Set Default email (receives emails from customers)
 <img src="https://imgur.com/ATaqxZo.png" alt="osTicket Installation Window"/>
 
-- Skip "Database Settings" for now
     
 </p>
 <br />
@@ -314,7 +312,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Install "HeidiSQL_12.3.0.6589_Setup" from downloaded <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD">osTicket Installation Files</a>
 - Launch HeidiSQL
-- Click "New" at bottom left of window to start creating a session
+- Click "New" at bottom left of window to create a new session
 - Set "User" to "root" and fill out "Password" with the same password you used when completing step 9 (MySQL installation)
 - Click "Open" to connect to session database
 - Right click on "Unnamed" to create a database and name it "osTicket", then click "Ok" to confirm
@@ -332,16 +330,17 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
 
-- Within osTicket webpage, fill out "Database Settings"
+- Within the osTicket webpage, fill out "Database Settings"
 <img src="https://imgur.com/1hfpsSK.png" alt="osTicket Database settings"/>
 
-- Click "Install Now" and you osTicket will complete the installation
+- Click "Install Now" and osTicket will complete the installation
+- Verify Installation by accessing your help desk login page: http://localhost/osTicket/scp/login.php.
 <img src="https://imgur.com/1hfpsSK.png" alt="osTicket Finished setup"/>
 <img src="https://imgur.com/9uV2r32.png" alt="osTicket Finished setup"/>
 </p>
 <br />
 
-<h2 align=center> Congratulations on successfully setting up osTicket on your Machine !</h2>
+<h2 align=center> Congratulations on successfully setting up osTicket on your Machine. Your help desk system is now ready to use!</h2>
 
 <p>
 
