@@ -164,7 +164,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Open Windows search bar, type "IIS"
 - Right click application and "Run as administrator"
-- <img src="https://imgur.com/j7PPX4e.png" alt="MySql Standard config"/>
     
 </p>
 <br />
@@ -175,6 +174,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - In IIS, click "PHP Manager"
 - Under "PHP Setup", click "Register new PHP version"
+<img src="https://imgur.com/j7PPX4e.png" alt="MySql Standard config"/>
 <img src="https://i.imgur.com/GAGkdGk.png" alt="PHP version"/>
 
 - After clicking "Register new PHP version", you will be required to provide a path to "php-cgi.exe"
@@ -218,7 +218,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
 
-- Refer to Step 12
+- Refer to Step 13 (Stop and Start the server)
     
 </p>
 <br />
@@ -313,7 +313,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Install "HeidiSQL_12.3.0.6589_Setup" from downloaded <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD">osTicket Installation Files</a>
 - Launch HeidiSQL
 - Click "New" at bottom left of window to create a new session
-- Set "User" to "root" and fill out "Password" with the same password you used when completing step 9 (MySQL installation)
+- Set "User" to "root" and fill out "Password" with the same password you used when completing step 10 (MySQL installation)
 - Click "Open" to connect to session database
 - Right click on "Unnamed" to create a database and name it "osTicket", then click "Ok" to confirm
 <img src="https://imgur.com/rGGbSY7.png" alt="osTicket Database Creation"/>
