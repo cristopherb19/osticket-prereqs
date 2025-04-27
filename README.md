@@ -273,7 +273,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Within "include" folder, locate "ost-sampleconfig.php" file
 - Rename file to "ost-config.php"
   <img src="https://imgur.com/zaUQ39p.png" alt="Extension enabling"/>
-  <img src="https://imgur.com/zaUQ39p.png" alt="Extension enabling"/>
     
 </p>
 <br />
@@ -287,7 +286,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Click "Add" at bottom left of window -> click "Select a principal" -> type "Everyone" in object name text box -> click "Ok"
 - Under "Basic permissions" enable "Full control" check box
 - If done correctly, your window should look like the picture below:
-<img src="https://i.imgur.com/pltE6Mp.png" alt="Permissions window"/>
+<img src="https://imgur.com/zE3utBn.png" alt="Permissions window"/>
+<img src="https://imgur.com/rUW2oUk.png" alt="Permissions window"/>
+<img src="https://imgur.com/edxlydv.png" alt="Permissions window"/>
 
 - Click "Apply" -> click "Ok"
     
@@ -300,7 +301,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Within the osTicket webpage, click "Continue"
 - Fill out "System Settings" and "Admin User" section (NOTE: "Default Email" and the email under "Admin User" Section should differ)
-<img src="https://i.imgur.com/Ji2MUcQ.png" alt="osTicket Installation Window"/>
+<img src="https://imgur.com/ATaqxZo.png" alt="osTicket Installation Window"/>
 
 - Skip "Database Settings" for now
     
@@ -317,7 +318,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Set "User" to "root" and fill out "Password" with the same password you used when completing step 9 (MySQL installation)
 - Click "Open" to connect to session database
 - Right click on "Unnamed" to create a database and name it "osTicket", then click "Ok" to confirm
-<img src="https://i.imgur.com/3SiNiJt.png" alt="osTicket Database Creation"/>
+<img src="https://imgur.com/rGGbSY7.png" alt="osTicket Database Creation"/>
+<img src="https://imgur.com/0qyhi5I.png" alt="osTicket Database Creation"/>
+<img src="https://imgur.com/E4JozJI.png" alt="osTicket Database Creation"/>  
+<img src="https://imgur.com/P1UGsBb.png" alt="osTicket Database Creation"/>
+<img src="https://imgur.com/8Oks83v.png" alt="osTicket Database Creation"/>
+
 
 </p>
 <br />
@@ -327,10 +333,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 
 - Within osTicket webpage, fill out "Database Settings"
-<img src="https://i.imgur.com/YCbeDsb.png" alt="osTicket Database settings"/>
+<img src="https://imgur.com/1hfpsSK.png" alt="osTicket Database settings"/>
 
 - Click "Install Now" and you osTicket will complete the installation
-<img src="https://i.imgur.com/1SGEcc6.png" alt="osTicket Finished setup"/>
+<img src="https://imgur.com/1hfpsSK.png" alt="osTicket Finished setup"/>
+<img src="https://imgur.com/9uV2r32.png" alt="osTicket Finished setup"/>
 </p>
 <br />
 
@@ -338,6 +345,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
 
-Please refer to <a href="https://github.com/christianDCdev/osTicket-post-install-config">osTicket: Post-Installation Configuration</a> after completing your installation to start configuring osTicket.
+Please refer to <a href="https://github.com/cristopherb19/osTicket-post-install-config">osTicket: Post-Installation Configuration</a> after completing your installation to start configuring osTicket.
     
 </p>
