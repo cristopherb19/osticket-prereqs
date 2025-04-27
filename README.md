@@ -254,10 +254,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   - "php_imap.dll"
   - "php_intl.dll"
   - "php_opcache.dll"
- <img src="https://i.imgur.com/wL2fFkh.png" alt="Extension enabling"/>
+ <img src="https://imgur.com/jhXrYt0.png" alt="Extension enabling"/>
+ <img src="https://imgur.com/CDNlS9a.png" alt="Extension enabling"/>
+ <img src="https://imgur.com/E7eRZR1.png" alt="Extension enabling"/>
 
 - Refresh the osTicket site in your browser and if done correctly, you'll notice previously disabled features are now enabled
-<img src="https://i.imgur.com/fJLmQu3.png" alt="osTicket Refresh"/>
+<img src="https://imgur.com/FJcWzU5.png" alt="osTicket Refresh"/>
     
 </p>
 <br />
@@ -270,6 +272,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Within File Explorer, navigate to Windows (C:) Drive -> "inetpub" -> "wwwroot" -> "osTicket" -> "include"
 - Within "include" folder, locate "ost-sampleconfig.php" file
 - Rename file to "ost-config.php"
+  <img src="https://imgur.com/zaUQ39p.png" alt="Extension enabling"/>
+  <img src="https://imgur.com/zaUQ39p.png" alt="Extension enabling"/>
     
 </p>
 <br />
